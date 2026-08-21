@@ -1,0 +1,1239 @@
+{
+  "format_version": 2,
+  "items": {
+    "minecraft:silverfish_spawn_egg": [
+      {
+        "bedrock_identifier": "tooltrims:item/tracks_template",
+        "bedrock_options": {
+          "icon": "tooltrims.item_tracks_template"
+        },
+        "model": "tooltrims:tracks_template",
+        "type": "definition"
+      }
+    ],
+    "minecraft:tadpole_spawn_egg": [
+      {
+        "bedrock_identifier": "tooltrims:item/linear_template",
+        "bedrock_options": {
+          "icon": "tooltrims.item_linear_template"
+        },
+        "model": "tooltrims:linear_template",
+        "type": "definition"
+      }
+    ],
+    "minecraft:cod_spawn_egg": [
+      {
+        "bedrock_identifier": "tooltrims:item/charge_template",
+        "bedrock_options": {
+          "icon": "tooltrims.item_charge_template"
+        },
+        "model": "tooltrims:charge_template",
+        "type": "definition"
+      }
+    ],
+    "minecraft:snow_golem_spawn_egg": [
+      {
+        "bedrock_identifier": "tooltrims:item/frost_template",
+        "bedrock_options": {
+          "icon": "tooltrims.item_frost_template"
+        },
+        "model": "tooltrims:frost_template",
+        "type": "definition"
+      }
+    ],
+    "minecraft:paper": [
+      {
+        "bedrock_identifier": "geyser_mc:item/defusal/c4",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_defusal_c4_icon"
+        },
+        "model": "minecraft:defusal/c4",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/defusal/ct_armored",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_defusal_ct_armored_icon"
+        },
+        "model": "minecraft:defusal/ct_armored",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/defusal/ct_normal",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_defusal_ct_normal_icon"
+        },
+        "model": "minecraft:defusal/ct_normal",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/defusal/defuse_kit",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_defusal_defuse_kit_icon"
+        },
+        "model": "minecraft:defusal/defuse_kit",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/defusal/frag",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_defusal_frag_icon"
+        },
+        "model": "minecraft:misc/frag",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/defusal/helmet_ct_armored",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_defusal_helmet_ct_armored_icon"
+        },
+        "model": "minecraft:defusal/helmet_ct_armored",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/defusal/helmet_ct_normal",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_defusal_helmet_ct_normal_icon"
+        },
+        "model": "minecraft:defusal/helmet_ct_normal",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/defusal/helmet_t_armored",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_defusal_helmet_t_armored_icon"
+        },
+        "model": "minecraft:defusal/helmet_t_armored",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/defusal/helmet_t_normal",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_defusal_helmet_t_normal_icon"
+        },
+        "model": "minecraft:defusal/helmet_t_normal",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/defusal/invpane",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_defusal_invpane_icon"
+        },
+        "model": "minecraft:defusal/invpane",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/defusal/knife",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_defusal_knife_icon"
+        },
+        "model": "minecraft:defusal/knife",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/defusal/molotov",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_defusal_molotov_icon"
+        },
+        "model": "minecraft:misc/molotov",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/defusal/placedc4",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_defusal_placedc4_icon"
+        },
+        "model": "minecraft:defusal/placedc4",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/defusal/shop",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_defusal_shop_icon"
+        },
+        "model": "minecraft:defusal/shop",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/defusal/smoke",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_defusal_smoke_icon"
+        },
+        "model": "minecraft:misc/smoke",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/defusal/standard_defuse",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_defusal_standard_defuse_icon"
+        },
+        "model": "minecraft:defusal/standard_defuse",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/defusal/t_armored",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_defusal_t_armored_icon"
+        },
+        "model": "minecraft:defusal/t_armored",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/defusal/t_normal",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_defusal_t_normal_icon"
+        },
+        "model": "minecraft:defusal/t_normal",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/44_magnum",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_44_magnum_icon"
+        },
+        "model": "minecraft:guns/44_magnum",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/44_magnum_s",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_44_magnum_s_icon"
+        },
+        "model": "minecraft:guns/44_magnum_s",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/44_magnum_s_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_44_magnum_s_sc_icon"
+        },
+        "model": "minecraft:guns/44_magnum_s_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/44_magnum_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_44_magnum_sc_icon"
+        },
+        "model": "minecraft:guns/44_magnum_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/50_cal_ammo",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_50_cal_ammo_icon"
+        },
+        "model": "minecraft:ammo/50_cal_ammo",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/ak_47",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_ak_47_icon"
+        },
+        "model": "minecraft:guns/ak_47",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/ak_47_s",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_ak_47_s_icon"
+        },
+        "model": "minecraft:guns/ak_47_s",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/ak_47_s_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_ak_47_s_sc_icon"
+        },
+        "model": "minecraft:guns/ak_47_s_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/ak_47_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_ak_47_sc_icon"
+        },
+        "model": "minecraft:guns/ak_47_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/ar_15",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_ar_15_icon"
+        },
+        "model": "minecraft:guns/ar_15",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/ar_15_s",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_ar_15_s_icon"
+        },
+        "model": "minecraft:guns/ar_15_s",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/ar_15_s_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_ar_15_s_sc_icon"
+        },
+        "model": "minecraft:guns/ar_15_s_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/ar_15_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_ar_15_sc_icon"
+        },
+        "model": "minecraft:guns/ar_15_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/aug",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_aug_icon"
+        },
+        "model": "minecraft:guns/aug",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/aug_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_aug_sc_icon"
+        },
+        "model": "minecraft:guns/aug_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/autosniper",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_autosniper_icon"
+        },
+        "model": "minecraft:guns/autosniper",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/autosniper_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_autosniper_sc_icon"
+        },
+        "model": "minecraft:guns/autosniper_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/awp",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_awp_icon"
+        },
+        "model": "minecraft:guns/awp/awp",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/awp_l",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_awp_l_icon"
+        },
+        "model": "minecraft:guns/awp/awp_l",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/awp_l_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_awp_l_sc_icon"
+        },
+        "model": "minecraft:guns/awp/awp_l_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/awp_s",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_awp_s_icon"
+        },
+        "model": "minecraft:guns/awp/awp_s",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/awp_s_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_awp_s_sc_icon"
+        },
+        "model": "minecraft:guns/awp/awp_s_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/awp_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_awp_sc_icon"
+        },
+        "model": "minecraft:guns/awp/awp_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/bfg9000",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_bfg9000_icon"
+        },
+        "model": "minecraft:guns/bfg9000",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/bfg9000_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_bfg9000_sc_icon"
+        },
+        "model": "minecraft:guns/bfg9000_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/blaster_pistol",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_blaster_pistol_icon"
+        },
+        "model": "minecraft:guns/blaster_pistol",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/blaster_pistol_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_blaster_pistol_sc_icon"
+        },
+        "model": "minecraft:guns/blaster_pistol_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/boomsniper",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_boomsniper_icon"
+        },
+        "model": "minecraft:guns/boomsniper",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/boomsniper_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_boomsniper_sc_icon"
+        },
+        "model": "minecraft:guns/boomsniper_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/breakaction",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_breakaction_icon"
+        },
+        "model": "minecraft:guns/breakaction",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/breakaction_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_breakaction_sc_icon"
+        },
+        "model": "minecraft:guns/breakaction_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/bullets",
+        "bedrock_options": {
+          "icon": "minecraft.items_item_bullet_0"
+        },
+        "model": "minecraft:ammo/bullets",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/combatshotgun",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_combatshotgun_icon"
+        },
+        "model": "minecraft:guns/combatshotgun",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/combatshotgun_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_combatshotgun_sc_icon"
+        },
+        "model": "minecraft:guns/combatshotgun_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/deagle",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_deagle_icon"
+        },
+        "model": "minecraft:guns/deagle",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/deagle_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_deagle_sc_icon"
+        },
+        "model": "minecraft:guns/deagle_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/dragon_shell",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_dragon_shell_icon"
+        },
+        "model": "minecraft:ammo/dragon_shell",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/dragondrum",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_dragondrum_icon"
+        },
+        "model": "minecraft:guns/dragondrum",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/dragondrum_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_dragondrum_sc_icon"
+        },
+        "model": "minecraft:guns/dragondrum_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/dragonflame",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_dragonflame_icon"
+        },
+        "model": "minecraft:guns/dragonflame",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/dragonflame_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_dragonflame_sc_icon"
+        },
+        "model": "minecraft:guns/dragonflame_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/dragonsniper",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_dragonsniper_icon"
+        },
+        "model": "minecraft:guns/dragonsniper",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/dragonsniper_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_dragonsniper_sc_icon"
+        },
+        "model": "minecraft:guns/dragonsniper_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/dualies",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_dualies_icon"
+        },
+        "model": "minecraft:guns/dualies",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/dualies_s",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_dualies_s_icon"
+        },
+        "model": "minecraft:guns/dualies_s",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/dualies_s_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_dualies_s_sc_icon"
+        },
+        "model": "minecraft:guns/dualies_s_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/dualies_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_dualies_sc_icon"
+        },
+        "model": "minecraft:guns/dualies_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/energy_cell",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_energy_cell_icon"
+        },
+        "model": "minecraft:ammo/energy_cell",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/energy_projectile",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_energy_projectile_icon"
+        },
+        "model": "minecraft:misc/energy_projectile",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/enlarger",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_enlarger_icon"
+        },
+        "model": "minecraft:guns/enlarger",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/flare",
+        "bedrock_options": {
+          "icon": "minecraft.items_item_bullet_8"
+        },
+        "model": "minecraft:ammo/flare",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/flare_gun",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_flare_gun_icon"
+        },
+        "model": "minecraft:guns/flare_gun",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/flare_gun_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_flare_gun_sc_icon"
+        },
+        "model": "minecraft:guns/flare_gun_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/glock",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_glock_icon"
+        },
+        "model": "minecraft:guns/glock",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/glock_s",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_glock_s_icon"
+        },
+        "model": "minecraft:guns/glock_s",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/glock_s_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_glock_s_sc_icon"
+        },
+        "model": "minecraft:guns/glock_s_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/glock_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_glock_sc_icon"
+        },
+        "model": "minecraft:guns/glock_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/hunting_rifle",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_hunting_rifle_icon"
+        },
+        "model": "minecraft:guns/hunting_rifle/hunting_rifle",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/hunting_rifle_l",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_hunting_rifle_l_icon"
+        },
+        "model": "minecraft:guns/hunting_rifle/hunting_rifle_l",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/hunting_rifle_l_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_hunting_rifle_l_sc_icon"
+        },
+        "model": "minecraft:guns/hunting_rifle/hunting_rifle_l_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/hunting_rifle_s",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_hunting_rifle_s_icon"
+        },
+        "model": "minecraft:guns/hunting_rifle/hunting_rifle_s",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/hunting_rifle_s_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_hunting_rifle_s_sc_icon"
+        },
+        "model": "minecraft:guns/hunting_rifle/hunting_rifle_s_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/hunting_rifle_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_hunting_rifle_sc_icon"
+        },
+        "model": "minecraft:guns/hunting_rifle/hunting_rifle_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/judgerevolver",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_judgerevolver_icon"
+        },
+        "model": "minecraft:guns/judgerevolver",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/judgerevolver_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_judgerevolver_sc_icon"
+        },
+        "model": "minecraft:guns/judgerevolver_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/lasersight",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_lasersight_icon"
+        },
+        "model": "minecraft:misc/lasersight",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/light_ammo",
+        "bedrock_options": {
+          "icon": "minecraft.items_item_bullet_7"
+        },
+        "model": "minecraft:ammo/light_ammo",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/lightning_gun",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_lightning_gun_icon"
+        },
+        "model": "minecraft:guns/lightning_gun",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/lmg",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_lmg_icon"
+        },
+        "model": "minecraft:guns/lmg",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/lmg_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_lmg_sc_icon"
+        },
+        "model": "minecraft:guns/lmg_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/longarmtac",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_longarmtac_icon"
+        },
+        "model": "minecraft:guns/longarmtac",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/longarmtac_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_longarmtac_sc_icon"
+        },
+        "model": "minecraft:guns/longarmtac_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/m1garand",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_m1garand_icon"
+        },
+        "model": "minecraft:guns/m1garand",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/m1garand_s",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_m1garand_s_icon"
+        },
+        "model": "minecraft:guns/m1garand_s",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/m1garand_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_m1garand_sc_icon"
+        },
+        "model": "minecraft:guns/m1garand_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/m32",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_m32_icon"
+        },
+        "model": "minecraft:guns/m32",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/m32_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_m32_sc_icon"
+        },
+        "model": "minecraft:guns/m32_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/m4a4_s",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_m4a4_s_icon"
+        },
+        "model": "minecraft:guns/m4a4_s",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/m4a4_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_m4a4_sc_icon"
+        },
+        "model": "minecraft:guns/m4a4_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/machinepistol",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_machinepistol_icon"
+        },
+        "model": "minecraft:guns/machine_pistol",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/medium_ammo",
+        "bedrock_options": {
+          "icon": "minecraft.items_item_bullet_6"
+        },
+        "model": "minecraft:ammo/medium_ammo",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/minigun",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_minigun_icon"
+        },
+        "model": "minecraft:guns/minigun",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/minigun_rot",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_minigun_rot_icon"
+        },
+        "model": "minecraft:guns/minigun_rot",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/minigun_rot_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_minigun_rot_sc_icon"
+        },
+        "model": "minecraft:guns/minigun_rot_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/minigun_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_minigun_sc_icon"
+        },
+        "model": "minecraft:guns/minigun_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/musket",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_musket_icon"
+        },
+        "model": "minecraft:guns/musket",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/musket_ball",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_musket_ball_icon"
+        },
+        "model": "minecraft:ammo/musket_ball",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/musket_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_musket_sc_icon"
+        },
+        "model": "minecraft:guns/musket_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/p90",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_p90_icon"
+        },
+        "model": "minecraft:guns/p90",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/p90_s",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_p90_s_icon"
+        },
+        "model": "minecraft:guns/p90_s",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/p90_s_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_p90_s_sc_icon"
+        },
+        "model": "minecraft:guns/p90_s_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/p90_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_p90_sc_icon"
+        },
+        "model": "minecraft:guns/p90_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/poweruprifle",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_poweruprifle_icon"
+        },
+        "model": "minecraft:guns/poweruprifle",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/poweruprifle_hot",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_poweruprifle_hot_icon"
+        },
+        "model": "minecraft:guns/poweruprifle_hot",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/poweruprifle_hot_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_poweruprifle_hot_sc_icon"
+        },
+        "model": "minecraft:guns/poweruprifle_hot_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/poweruprifle_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_poweruprifle_sc_icon"
+        },
+        "model": "minecraft:guns/poweruprifle_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/pump_shotgun",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_pump_shotgun_icon"
+        },
+        "model": "minecraft:guns/pump_shotgun",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/pump_shotgun_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_pump_shotgun_sc_icon"
+        },
+        "model": "minecraft:guns/pump_shotgun_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/quadlauncher",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_quadlauncher_icon"
+        },
+        "model": "minecraft:guns/quadlauncher",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/ranger",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_ranger_icon"
+        },
+        "model": "minecraft:guns/ranger_shotgun",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/ranger_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_ranger_sc_icon"
+        },
+        "model": "minecraft:guns/ranger_shotgun_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/rapidflare_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_rapidflare_sc_icon"
+        },
+        "model": "minecraft:guns/rapidflare_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/recipe_book",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_recipe_book_icon"
+        },
+        "model": "minecraft:misc/recipe_book",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/revolver",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_revolver_icon"
+        },
+        "model": "minecraft:guns/revolver",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/revolver_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_revolver_sc_icon"
+        },
+        "model": "minecraft:guns/revolver_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/rockets",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_rockets_icon"
+        },
+        "model": "minecraft:ammo/rockets",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/rpg",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_rpg_icon"
+        },
+        "model": "minecraft:guns/rpg",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/rpg_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_rpg_sc_icon"
+        },
+        "model": "minecraft:guns/rpg_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/rpgloaded",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_rpgloaded_icon"
+        },
+        "model": "minecraft:guns/rpgloaded",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/rpgloaded_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_rpgloaded_sc_icon"
+        },
+        "model": "minecraft:guns/rpgloaded_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/scoped_revolver",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_scoped_revolver_icon"
+        },
+        "model": "minecraft:guns/scoped_revolver",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/scoped_revolver_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_scoped_revolver_sc_icon"
+        },
+        "model": "minecraft:guns/scoped_revolver_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/shotgun_shells",
+        "bedrock_options": {
+          "icon": "minecraft.items_item_bullet_2"
+        },
+        "model": "minecraft:ammo/shotgun_shells",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/shrinker",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_shrinker_icon"
+        },
+        "model": "minecraft:guns/shrinker",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/shrinker_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_shrinker_sc_icon"
+        },
+        "model": "minecraft:guns/shrinker_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/sniper_ammo",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_sniper_ammo_icon"
+        },
+        "model": "minecraft:ammo/sniper_ammo",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/ssg08",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_ssg08_icon"
+        },
+        "model": "minecraft:guns/ssg08/ssg08",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/ssg08_l",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_ssg08_l_icon"
+        },
+        "model": "minecraft:guns/ssg08/ssg08_l",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/ssg08_s",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_ssg08_s_icon"
+        },
+        "model": "minecraft:guns/ssg08/ssg08_s",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/ssg08_s_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_ssg08_s_sc_icon"
+        },
+        "model": "minecraft:guns/ssg08/ssg08_s_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/ssg08_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_ssg08_sc_icon"
+        },
+        "model": "minecraft:guns/ssg08/ssg08_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/suppressor",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_suppressor_icon"
+        },
+        "model": "minecraft:misc/supressor",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/tacshotgun",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_tacshotgun_icon"
+        },
+        "model": "minecraft:guns/tacshotgun",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/tacshotgun_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_tacshotgun_sc_icon"
+        },
+        "model": "minecraft:guns/tacshotgun_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/tommy_gun",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_tommy_gun_icon"
+        },
+        "model": "minecraft:guns/tommy_gun",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/tommy_gun_s",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_tommy_gun_s_icon"
+        },
+        "model": "minecraft:guns/tommy_gun_s",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/tommy_gun_s_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_tommy_gun_s_sc_icon"
+        },
+        "model": "minecraft:guns/tommy_gun_s_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/tommy_gun_sc",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_tommy_gun_sc_icon"
+        },
+        "model": "minecraft:guns/tommy_gun_sc",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/turret",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_turret_icon"
+        },
+        "model": "minecraft:misc/turret",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/turret_base",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_turret_base_icon"
+        },
+        "model": "minecraft:guns/turret/turret_base",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "geyser_mc:item/models/turret_buttons",
+        "bedrock_options": {
+          "icon": "geyser_mc.item_models_turret_buttons_icon"
+        },
+        "model": "minecraft:guns/turret/turret_buttons",
+        "type": "definition"
+      }
+    ]
+  }
+}
