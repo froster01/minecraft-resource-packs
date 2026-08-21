@@ -1,0 +1,230 @@
+#### READ THIS FIRST ####
+What do I do now?
+
+In this folder, you'll find 3 important files/folders along with this one:
+
+- custom_mappings: you need to put the files in here in the `custom_mappings` folder in Geyser's config folder. These are the generated Geyser mappings.
+- pack.zip: put this in the "packs" folder in Geyser's config folder. This is the generated bedrock resourcepack.
+- lang: put all files in this folder in the "locales/overrides" folder in Geyser's config folder. These are the exported custom translation strings.
+  - The folder can be empty or non-existent if no language files are found. This is usually not an issue!
+
+Once you have taken those steps, restart your server. If everything went right, bedrock players should download
+the generated pack and see your custom items.
+
+IF YOU EXPERIENCE ANY ISSUES, please go to our Discord (https://discord.gg/geysermc) for support.
+Use the #custom-resource-packs channel, and make sure to include this report file.
+
+You can also open an issue report over at our issue tracker (https://github.com/GeyserMC/Rainbow/issues).
+Again, be sure to include this report file, and please make sure your issue is not already reported!
+If it is, you can help out by adding details to the existing report.
+
+Below, you'll find some statistics about the generated pack, and a mapping report,
+which will list any models converted, and any problems that occurred during mapping.
+#########################
+
+-- PACK GENERATION REPORT --
+// 你好中国！
+
+Version of Rainbow: 0.2.1-26.2-b55
+
+Generated pack: feraxis-bedrock
+Block mappings written: 0
+Item mappings written: 153
+Skull mappings written: 0
+Waypoint style mappings written: 0
+
+Item texture atlas size: 153
+Terrain texture atlas size: 0
+Flipbook texture atlas size: 0
+Sound definitions: 92
+
+Item attachables exported: 145
+Attachables exported: 145
+
+JSON-files written: 406
+Textures written: 252
+
+Username skulls exported: 0
+UUID skulls exported: 0
+Static profile skulls exported: 0
+
+-- ASSET CACHE STATS --
+Geometry cache: 87 written, 58 cache hits
+Block texture cache: 0 written, 0 cache hits
+Item texture cache: 102 written, 52 cache hits
+
+-- PACK TREE REPORT --
+Bedrock pack feraxis-bedrock:
+  client item definition minecraft:ammo/50_cal_ammo plain model minecraft:item/models/50_cal_ammo: creating mapping for block model minecraft:item/models/50_cal_ammo
+  client item definition minecraft:ammo/bullets plain model minecraft:item/models/bullets: creating mapping for block model minecraft:item/models/bullets
+  client item definition minecraft:ammo/dragon_shell plain model minecraft:item/models/dragon_shell: creating mapping for block model minecraft:item/models/dragon_shell
+  client item definition minecraft:ammo/energy_cell plain model minecraft:item/models/energy_cell: creating mapping for block model minecraft:item/models/energy_cell
+  client item definition minecraft:ammo/flare plain model minecraft:item/models/flare: creating mapping for block model minecraft:item/models/flare
+  client item definition minecraft:ammo/light_ammo plain model minecraft:item/models/light_ammo: creating mapping for block model minecraft:item/models/light_ammo
+  client item definition minecraft:ammo/medium_ammo plain model minecraft:item/models/medium_ammo: creating mapping for block model minecraft:item/models/medium_ammo
+  client item definition minecraft:ammo/musket_ball plain model minecraft:item/models/musket_ball: creating mapping for block model minecraft:item/models/musket_ball
+  client item definition minecraft:ammo/rockets plain model minecraft:item/models/rockets: creating mapping for block model minecraft:item/models/rockets
+  client item definition minecraft:ammo/shotgun_shells plain model minecraft:item/models/shotgun_shells: creating mapping for block model minecraft:item/models/shotgun_shells
+  client item definition minecraft:ammo/sniper_ammo plain model minecraft:item/models/sniper_ammo: creating mapping for block model minecraft:item/models/sniper_ammo
+  client item definition minecraft:defusal/c4 plain model minecraft:item/defusal/c4: creating mapping for block model minecraft:item/defusal/c4
+  client item definition minecraft:defusal/ct_armored plain model minecraft:item/defusal/ct_armored: creating mapping for block model minecraft:item/defusal/ct_armored
+  client item definition minecraft:defusal/ct_normal plain model minecraft:item/defusal/ct_normal: creating mapping for block model minecraft:item/defusal/ct_normal
+  client item definition minecraft:defusal/defuse_kit plain model minecraft:item/defusal/defuse_kit: creating mapping for block model minecraft:item/defusal/defuse_kit
+  client item definition minecraft:defusal/helmet_ct_armored plain model minecraft:item/defusal/helmet_ct_armored: creating mapping for block model minecraft:item/defusal/helmet_ct_armored
+  client item definition minecraft:defusal/helmet_ct_normal plain model minecraft:item/defusal/helmet_ct_normal: creating mapping for block model minecraft:item/defusal/helmet_ct_normal
+  client item definition minecraft:defusal/helmet_t_armored plain model minecraft:item/defusal/helmet_t_armored: creating mapping for block model minecraft:item/defusal/helmet_t_armored
+  client item definition minecraft:defusal/helmet_t_normal plain model minecraft:item/defusal/helmet_t_normal: creating mapping for block model minecraft:item/defusal/helmet_t_normal
+  client item definition minecraft:defusal/invpane plain model minecraft:item/defusal/invpane: creating mapping for block model minecraft:item/defusal/invpane
+  client item definition minecraft:defusal/knife plain model minecraft:item/defusal/knife: creating mapping for block model minecraft:item/defusal/knife
+  client item definition minecraft:defusal/placedc4 plain model minecraft:item/defusal/placedc4: creating mapping for block model minecraft:item/defusal/placedc4
+  client item definition minecraft:defusal/shop plain model minecraft:item/defusal/shop: creating mapping for block model minecraft:item/defusal/shop
+  client item definition minecraft:defusal/standard_defuse plain model minecraft:item/defusal/standard_defuse: creating mapping for block model minecraft:item/defusal/standard_defuse
+  client item definition minecraft:defusal/t_armored plain model minecraft:item/defusal/t_armored: creating mapping for block model minecraft:item/defusal/t_armored
+  client item definition minecraft:defusal/t_normal plain model minecraft:item/defusal/t_normal: creating mapping for block model minecraft:item/defusal/t_normal
+  client item definition minecraft:guns/44_magnum plain model minecraft:item/models/44_magnum: creating mapping for block model minecraft:item/models/44_magnum
+  client item definition minecraft:guns/44_magnum_s plain model minecraft:item/models/44_magnum_s: creating mapping for block model minecraft:item/models/44_magnum_s
+  client item definition minecraft:guns/44_magnum_s_sc plain model minecraft:item/models/44_magnum_s_sc: creating mapping for block model minecraft:item/models/44_magnum_s_sc
+  client item definition minecraft:guns/44_magnum_sc plain model minecraft:item/models/44_magnum_sc: creating mapping for block model minecraft:item/models/44_magnum_sc
+  client item definition minecraft:guns/ak_47 plain model minecraft:item/models/ak_47: creating mapping for block model minecraft:item/models/ak_47
+  client item definition minecraft:guns/ak_47_s plain model minecraft:item/models/ak_47_s: creating mapping for block model minecraft:item/models/ak_47_s
+  client item definition minecraft:guns/ak_47_s_sc plain model minecraft:item/models/ak_47_s_sc: creating mapping for block model minecraft:item/models/ak_47_s_sc
+  client item definition minecraft:guns/ak_47_sc plain model minecraft:item/models/ak_47_sc: creating mapping for block model minecraft:item/models/ak_47_sc
+  client item definition minecraft:guns/ar_15 plain model minecraft:item/models/ar_15: creating mapping for block model minecraft:item/models/ar_15
+  client item definition minecraft:guns/ar_15_s plain model minecraft:item/models/ar_15_s: creating mapping for block model minecraft:item/models/ar_15_s
+  client item definition minecraft:guns/ar_15_s_sc plain model minecraft:item/models/ar_15_s_sc: creating mapping for block model minecraft:item/models/ar_15_s_sc
+  client item definition minecraft:guns/ar_15_sc plain model minecraft:item/models/ar_15_sc: creating mapping for block model minecraft:item/models/ar_15_sc
+  client item definition minecraft:guns/aug plain model minecraft:item/models/aug: creating mapping for block model minecraft:item/models/aug
+  client item definition minecraft:guns/aug_sc plain model minecraft:item/models/aug_sc: creating mapping for block model minecraft:item/models/aug_sc
+  client item definition minecraft:guns/autosniper plain model minecraft:item/models/autosniper: creating mapping for block model minecraft:item/models/autosniper
+  client item definition minecraft:guns/autosniper_sc plain model minecraft:item/models/autosniper_sc: creating mapping for block model minecraft:item/models/autosniper_sc
+  client item definition minecraft:guns/awp/awp plain model minecraft:item/models/awp: creating mapping for block model minecraft:item/models/awp
+  client item definition minecraft:guns/awp/awp_l plain model minecraft:item/models/awp_l: creating mapping for block model minecraft:item/models/awp_l
+  client item definition minecraft:guns/awp/awp_l_sc plain model minecraft:item/models/awp_l_sc: creating mapping for block model minecraft:item/models/awp_l_sc
+  client item definition minecraft:guns/awp/awp_s plain model minecraft:item/models/awp_s: creating mapping for block model minecraft:item/models/awp_s
+  client item definition minecraft:guns/awp/awp_s_sc plain model minecraft:item/models/awp_s_sc: creating mapping for block model minecraft:item/models/awp_s_sc
+  client item definition minecraft:guns/awp/awp_sc plain model minecraft:item/models/awp_sc: creating mapping for block model minecraft:item/models/awp_sc
+  client item definition minecraft:guns/bfg9000 plain model minecraft:item/models/bfg9000: creating mapping for block model minecraft:item/models/bfg9000
+  client item definition minecraft:guns/bfg9000_sc plain model minecraft:item/models/bfg9000_sc: creating mapping for block model minecraft:item/models/bfg9000_sc
+  client item definition minecraft:guns/blaster_pistol plain model minecraft:item/models/blaster_pistol: creating mapping for block model minecraft:item/models/blaster_pistol
+  client item definition minecraft:guns/blaster_pistol_sc plain model minecraft:item/models/blaster_pistol_sc: creating mapping for block model minecraft:item/models/blaster_pistol_sc
+  client item definition minecraft:guns/boomsniper plain model minecraft:item/models/boomsniper: creating mapping for block model minecraft:item/models/boomsniper
+  client item definition minecraft:guns/boomsniper_sc plain model minecraft:item/models/boomsniper_sc: creating mapping for block model minecraft:item/models/boomsniper_sc
+  client item definition minecraft:guns/breakaction plain model minecraft:item/models/breakaction: creating mapping for block model minecraft:item/models/breakaction
+  client item definition minecraft:guns/breakaction_sc plain model minecraft:item/models/breakaction_sc: creating mapping for block model minecraft:item/models/breakaction_sc
+  client item definition minecraft:guns/combatshotgun plain model minecraft:item/models/combatshotgun: creating mapping for block model minecraft:item/models/combatshotgun
+  client item definition minecraft:guns/combatshotgun_sc plain model minecraft:item/models/combatshotgun_sc: creating mapping for block model minecraft:item/models/combatshotgun_sc
+  client item definition minecraft:guns/deagle plain model minecraft:item/models/deagle: creating mapping for block model minecraft:item/models/deagle
+  client item definition minecraft:guns/deagle_sc plain model minecraft:item/models/deagle_sc: creating mapping for block model minecraft:item/models/deagle_sc
+  client item definition minecraft:guns/dragondrum plain model minecraft:item/models/dragondrum: creating mapping for block model minecraft:item/models/dragondrum
+  client item definition minecraft:guns/dragondrum_sc plain model minecraft:item/models/dragondrum_sc: creating mapping for block model minecraft:item/models/dragondrum_sc
+  client item definition minecraft:guns/dragonflame plain model minecraft:item/models/dragonflame: creating mapping for block model minecraft:item/models/dragonflame
+  client item definition minecraft:guns/dragonflame_sc plain model minecraft:item/models/dragonflame_sc: creating mapping for block model minecraft:item/models/dragonflame_sc
+  client item definition minecraft:guns/dragonsniper plain model minecraft:item/models/dragonsniper: creating mapping for block model minecraft:item/models/dragonsniper
+  client item definition minecraft:guns/dragonsniper_sc plain model minecraft:item/models/dragonsniper_sc: creating mapping for block model minecraft:item/models/dragonsniper_sc
+  client item definition minecraft:guns/dualies plain model minecraft:item/models/dualies: creating mapping for block model minecraft:item/models/dualies
+  client item definition minecraft:guns/dualies_s plain model minecraft:item/models/dualies_s: creating mapping for block model minecraft:item/models/dualies_s
+  client item definition minecraft:guns/dualies_s_sc plain model minecraft:item/models/dualies_s_sc: creating mapping for block model minecraft:item/models/dualies_s_sc
+  client item definition minecraft:guns/dualies_sc plain model minecraft:item/models/dualies_sc: creating mapping for block model minecraft:item/models/dualies_sc
+  client item definition minecraft:guns/enlarger plain model minecraft:item/models/enlarger: creating mapping for block model minecraft:item/models/enlarger
+  client item definition minecraft:guns/flare_gun plain model minecraft:item/models/flare_gun: creating mapping for block model minecraft:item/models/flare_gun
+  client item definition minecraft:guns/flare_gun_sc plain model minecraft:item/models/flare_gun_sc: creating mapping for block model minecraft:item/models/flare_gun_sc
+  client item definition minecraft:guns/glock plain model minecraft:item/models/glock: creating mapping for block model minecraft:item/models/glock
+  client item definition minecraft:guns/glock_s plain model minecraft:item/models/glock_s: creating mapping for block model minecraft:item/models/glock_s
+  client item definition minecraft:guns/glock_s_sc plain model minecraft:item/models/glock_s_sc: creating mapping for block model minecraft:item/models/glock_s_sc
+  client item definition minecraft:guns/glock_sc plain model minecraft:item/models/glock_sc: creating mapping for block model minecraft:item/models/glock_sc
+  client item definition minecraft:guns/hunting_rifle/hunting_rifle plain model minecraft:item/models/hunting_rifle: creating mapping for block model minecraft:item/models/hunting_rifle
+  client item definition minecraft:guns/hunting_rifle/hunting_rifle_l plain model minecraft:item/models/hunting_rifle_l: creating mapping for block model minecraft:item/models/hunting_rifle_l
+  client item definition minecraft:guns/hunting_rifle/hunting_rifle_l_sc plain model minecraft:item/models/hunting_rifle_l_sc: creating mapping for block model minecraft:item/models/hunting_rifle_l_sc
+  client item definition minecraft:guns/hunting_rifle/hunting_rifle_s plain model minecraft:item/models/hunting_rifle_s: creating mapping for block model minecraft:item/models/hunting_rifle_s
+  client item definition minecraft:guns/hunting_rifle/hunting_rifle_s_sc plain model minecraft:item/models/hunting_rifle_s_sc: creating mapping for block model minecraft:item/models/hunting_rifle_s_sc
+  client item definition minecraft:guns/hunting_rifle/hunting_rifle_sc plain model minecraft:item/models/hunting_rifle_sc: creating mapping for block model minecraft:item/models/hunting_rifle_sc
+  client item definition minecraft:guns/judgerevolver plain model minecraft:item/models/judgerevolver: creating mapping for block model minecraft:item/models/judgerevolver
+  client item definition minecraft:guns/judgerevolver_sc plain model minecraft:item/models/judgerevolver_sc: creating mapping for block model minecraft:item/models/judgerevolver_sc
+  client item definition minecraft:guns/lightning_gun plain model minecraft:item/models/lightning_gun: creating mapping for block model minecraft:item/models/lightning_gun
+  client item definition minecraft:guns/lmg plain model minecraft:item/models/lmg: creating mapping for block model minecraft:item/models/lmg
+  client item definition minecraft:guns/lmg_sc plain model minecraft:item/models/lmg_sc: creating mapping for block model minecraft:item/models/lmg_sc
+  client item definition minecraft:guns/longarmtac plain model minecraft:item/models/longarmtac: creating mapping for block model minecraft:item/models/longarmtac
+  client item definition minecraft:guns/longarmtac_sc plain model minecraft:item/models/longarmtac_sc: creating mapping for block model minecraft:item/models/longarmtac_sc
+  client item definition minecraft:guns/m1garand plain model minecraft:item/models/m1garand: creating mapping for block model minecraft:item/models/m1garand
+  client item definition minecraft:guns/m1garand_s plain model minecraft:item/models/m1garand_s: creating mapping for block model minecraft:item/models/m1garand_s
+  client item definition minecraft:guns/m1garand_s_sc plain model minecraft:item/models/m1garand_s: creating mapping for block model minecraft:item/models/m1garand_s
+  client item definition minecraft:guns/m1garand_sc plain model minecraft:item/models/m1garand_sc: creating mapping for block model minecraft:item/models/m1garand_sc
+  client item definition minecraft:guns/m32 plain model minecraft:item/models/m32: creating mapping for block model minecraft:item/models/m32
+  client item definition minecraft:guns/m32_sc plain model minecraft:item/models/m32_sc: creating mapping for block model minecraft:item/models/m32_sc
+  client item definition minecraft:guns/m4a4_s plain model minecraft:item/models/m4a4_s: creating mapping for block model minecraft:item/models/m4a4_s
+  client item definition minecraft:guns/m4a4_sc plain model minecraft:item/models/m4a4_sc: creating mapping for block model minecraft:item/models/m4a4_sc
+  client item definition minecraft:guns/machine_pistol plain model minecraft:item/models/machinepistol: creating mapping for block model minecraft:item/models/machinepistol
+  client item definition minecraft:guns/minigun plain model minecraft:item/models/minigun: creating mapping for block model minecraft:item/models/minigun
+  client item definition minecraft:guns/minigun_rot plain model minecraft:item/models/minigun_rot: creating mapping for block model minecraft:item/models/minigun_rot
+  client item definition minecraft:guns/minigun_rot_sc plain model minecraft:item/models/minigun_rot_sc: creating mapping for block model minecraft:item/models/minigun_rot_sc
+  client item definition minecraft:guns/minigun_sc plain model minecraft:item/models/minigun_sc: creating mapping for block model minecraft:item/models/minigun_sc
+  client item definition minecraft:guns/musket plain model minecraft:item/models/musket: creating mapping for block model minecraft:item/models/musket
+  client item definition minecraft:guns/musket_sc plain model minecraft:item/models/musket_sc: creating mapping for block model minecraft:item/models/musket_sc
+  client item definition minecraft:guns/p90 plain model minecraft:item/models/p90: creating mapping for block model minecraft:item/models/p90
+  client item definition minecraft:guns/p90_s plain model minecraft:item/models/p90_s: creating mapping for block model minecraft:item/models/p90_s
+  client item definition minecraft:guns/p90_s_sc plain model minecraft:item/models/p90_s_sc: creating mapping for block model minecraft:item/models/p90_s_sc
+  client item definition minecraft:guns/p90_sc plain model minecraft:item/models/p90_sc: creating mapping for block model minecraft:item/models/p90_sc
+  client item definition minecraft:guns/poweruprifle plain model minecraft:item/models/poweruprifle: creating mapping for block model minecraft:item/models/poweruprifle
+  client item definition minecraft:guns/poweruprifle_hot plain model minecraft:item/models/poweruprifle_hot: creating mapping for block model minecraft:item/models/poweruprifle_hot
+  client item definition minecraft:guns/poweruprifle_hot_sc plain model minecraft:item/models/poweruprifle_hot_sc: creating mapping for block model minecraft:item/models/poweruprifle_hot_sc
+  client item definition minecraft:guns/poweruprifle_sc plain model minecraft:item/models/poweruprifle_sc: creating mapping for block model minecraft:item/models/poweruprifle_sc
+  client item definition minecraft:guns/pump_shotgun plain model minecraft:item/models/pump_shotgun: creating mapping for block model minecraft:item/models/pump_shotgun
+  client item definition minecraft:guns/pump_shotgun_sc plain model minecraft:item/models/pump_shotgun_sc: creating mapping for block model minecraft:item/models/pump_shotgun_sc
+  client item definition minecraft:guns/quadlauncher plain model minecraft:item/models/quadlauncher: creating mapping for block model minecraft:item/models/quadlauncher
+  client item definition minecraft:guns/ranger_shotgun plain model minecraft:item/models/ranger: creating mapping for block model minecraft:item/models/ranger
+  client item definition minecraft:guns/ranger_shotgun_sc plain model minecraft:item/models/ranger_sc: creating mapping for block model minecraft:item/models/ranger_sc
+  client item definition minecraft:guns/rapidflare_sc plain model minecraft:item/models/rapidflare_sc: creating mapping for block model minecraft:item/models/rapidflare_sc
+  client item definition minecraft:guns/revolver plain model minecraft:item/models/revolver: creating mapping for block model minecraft:item/models/revolver
+  client item definition minecraft:guns/revolver_sc plain model minecraft:item/models/revolver_sc: creating mapping for block model minecraft:item/models/revolver_sc
+  client item definition minecraft:guns/rpg plain model minecraft:item/models/rpg: creating mapping for block model minecraft:item/models/rpg
+  client item definition minecraft:guns/rpg_sc plain model minecraft:item/models/rpg_sc: creating mapping for block model minecraft:item/models/rpg_sc
+  client item definition minecraft:guns/rpgloaded plain model minecraft:item/models/rpgloaded: creating mapping for block model minecraft:item/models/rpgloaded
+  client item definition minecraft:guns/rpgloaded_sc plain model minecraft:item/models/rpgloaded_sc: creating mapping for block model minecraft:item/models/rpgloaded_sc
+  client item definition minecraft:guns/scoped_revolver plain model minecraft:item/models/scoped_revolver: creating mapping for block model minecraft:item/models/scoped_revolver
+  client item definition minecraft:guns/scoped_revolver_sc plain model minecraft:item/models/scoped_revolver_sc: creating mapping for block model minecraft:item/models/scoped_revolver_sc
+  client item definition minecraft:guns/shrinker plain model minecraft:item/models/shrinker: creating mapping for block model minecraft:item/models/shrinker
+  client item definition minecraft:guns/shrinker_sc plain model minecraft:item/models/shrinker_sc: creating mapping for block model minecraft:item/models/shrinker_sc
+  client item definition minecraft:guns/ssg08/ssg08 plain model minecraft:item/models/ssg08: creating mapping for block model minecraft:item/models/ssg08
+  client item definition minecraft:guns/ssg08/ssg08_l plain model minecraft:item/models/ssg08_l: creating mapping for block model minecraft:item/models/ssg08_l
+  client item definition minecraft:guns/ssg08/ssg08_s plain model minecraft:item/models/ssg08_s: creating mapping for block model minecraft:item/models/ssg08_s
+  client item definition minecraft:guns/ssg08/ssg08_s_sc plain model minecraft:item/models/ssg08_s_sc: creating mapping for block model minecraft:item/models/ssg08_s_sc
+  client item definition minecraft:guns/ssg08/ssg08_sc plain model minecraft:item/models/ssg08_sc: creating mapping for block model minecraft:item/models/ssg08_sc
+  client item definition minecraft:guns/tacshotgun plain model minecraft:item/models/tacshotgun: creating mapping for block model minecraft:item/models/tacshotgun
+  client item definition minecraft:guns/tacshotgun_sc plain model minecraft:item/models/tacshotgun_sc: creating mapping for block model minecraft:item/models/tacshotgun_sc
+  client item definition minecraft:guns/tommy_gun plain model minecraft:item/models/tommy_gun: creating mapping for block model minecraft:item/models/tommy_gun
+  client item definition minecraft:guns/tommy_gun_s plain model minecraft:item/models/tommy_gun_s: creating mapping for block model minecraft:item/models/tommy_gun_s
+  client item definition minecraft:guns/tommy_gun_s_sc plain model minecraft:item/models/tommy_gun_s_sc: creating mapping for block model minecraft:item/models/tommy_gun_s_sc
+  client item definition minecraft:guns/tommy_gun_sc plain model minecraft:item/models/tommy_gun_sc: creating mapping for block model minecraft:item/models/tommy_gun_sc
+  client item definition minecraft:guns/turret/turret_base plain model minecraft:item/models/turret_base: creating mapping for block model minecraft:item/models/turret_base
+  client item definition minecraft:guns/turret/turret_buttons plain model minecraft:item/models/turret_buttons: creating mapping for block model minecraft:item/models/turret_buttons
+  client item definition minecraft:misc/energy_projectile plain model minecraft:item/models/energy_projectile: creating mapping for block model minecraft:item/models/energy_projectile
+  client item definition minecraft:misc/frag plain model minecraft:item/defusal/frag: creating mapping for block model minecraft:item/defusal/frag
+  client item definition minecraft:misc/lasersight plain model minecraft:item/models/lasersight: creating mapping for block model minecraft:item/models/lasersight
+  client item definition minecraft:misc/molotov plain model minecraft:item/defusal/molotov: creating mapping for block model minecraft:item/defusal/molotov
+  client item definition minecraft:misc/recipe_book plain model minecraft:item/models/recipe_book: creating mapping for block model minecraft:item/models/recipe_book
+  client item definition minecraft:misc/smoke plain model minecraft:item/defusal/smoke: creating mapping for block model minecraft:item/defusal/smoke
+  client item definition minecraft:misc/supressor plain model minecraft:item/models/suppressor: creating mapping for block model minecraft:item/models/suppressor
+  client item definition minecraft:misc/turret plain model minecraft:item/models/turret: creating mapping for block model minecraft:item/models/turret
+  client item definition tooltrims:charge_template plain model tooltrims:item/charge_template: creating mapping for block model tooltrims:item/charge_template
+  client item definition tooltrims:frost_template plain model tooltrims:item/frost_template: creating mapping for block model tooltrims:item/frost_template
+  client item definition tooltrims:linear_template plain model tooltrims:item/linear_template: creating mapping for block model tooltrims:item/linear_template
+  client item definition tooltrims:tracks_template plain model tooltrims:item/tracks_template: creating mapping for block model tooltrims:item/tracks_template
+  unable to get texture for minecraft:item/defusal/invpane_stitched; please provide it manually
+  exporting language fr_fr with 9 keys
+  exporting language pl_pl with 10 keys
+  exporting language zh_cn with 9 keys
+  exporting language pt_br with 9 keys
+  exporting language es_es with 9 keys
+  exporting language tr_tr with 14 keys
+  exporting language es_mx with 9 keys
+  exporting language uk_ua with 10 keys
+  exporting language pt_pt with 9 keys
+  exporting language zh_tw with 9 keys
+  exporting language lzh with 9 keys
+  exporting language fr_ca with 9 keys
+  exporting language zh_hk with 9 keys
+  exporting language de_de with 9 keys
+  exporting language en_us with 108 keys
+  exporting language ru_ru with 14 keys
+  exporting language es_ar with 9 keys
+  exporting language ja_jp with 10 keys
