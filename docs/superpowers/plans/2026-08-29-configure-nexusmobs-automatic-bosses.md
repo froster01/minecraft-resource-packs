@@ -4,7 +4,7 @@
 
 **Goal:** Enable conservative automatic NexusMobs boss spawning in the `feraxis` overworld while preserving vanilla mob behavior and healthy TPS.
 
-**Architecture:** Change only the `spawn` section of the live NexusMobs configuration through the authenticated Crafty Controller panel. Reload NexusMobs in place, verify persisted configuration and runtime state, and roll back by disabling automatic spawning if reload or performance checks fail.
+**Architecture:** Change only the `spawn` section of the live NexusMobs configuration through the authenticated Crafty Controller panel. Reload NexusMobs in place, verify persisted configuration and runtime state, and roll back by restoring the complete known-good original `spawn` block if reload or performance checks fail.
 
 **Tech Stack:** Crafty Controller 4.10.8, Paper 26.2, NexusMobs 4.0.0, Spark, Git
 
@@ -74,7 +74,16 @@ Spawn Interval: 0.8-1.2 hours
 Gamerule mob_griefing is currently set to: true
 ```
 
-Record the Spark 5-second and 10-second TPS values for comparison after reload.
+#### Recorded baseline
+
+- Primary worker TPS: 5-second `20.0`; 10-second `20.0`.
+- Primary worker tick durations (min/median/95th percentile/max):
+  - 10-second: `23.4/28.8/41.3/277.1 ms`.
+  - 1-minute: `22.5/27.9/37.6/328.6 ms`.
+- Independent reviewer TPS: 5-second `20.0`; 10-second `20.0`.
+- Independent reviewer tick durations (min/median/95th percentile/max):
+  - 10-second: `21.1/26.0/34.4/227.0 ms`.
+  - 1-minute: `21.1/25.7/35.5/353.7 ms`.
 
 ### Task 2: Apply the Approved Spawn Profile
 
@@ -170,13 +179,7 @@ Gamerule mob_griefing is currently set to: true
 
 - [ ] **Step 4: Check TPS after reload**
 
-Run:
-
-```text
-spark tps
-```
-
-Expected: 5-second and 10-second TPS are near 20.0, and there is no sustained regression from the Task 1 baseline.
+After reload, wait 30 seconds and run `spark tps` twice, 30 seconds apart. Pass if both samples have 5s and 10s TPS >= 19.5 and 10s median tick duration <= 45 ms, with no NexusMobs reload/config errors. If either sample fails, execute rollback.
 
 - [ ] **Step 5: Inspect fresh console output for NexusMobs errors**
 
@@ -187,18 +190,30 @@ Expected: no YAML parse error, no `Error reloading config`, and no NexusMobs sta
 **Files:**
 - Modify conditionally: `plugins/NexusMobs/config.yml`
 
-- [ ] **Step 1: Disable automatic spawning while preserving the approved values**
+- [ ] **Step 1: Restore the complete known-good original spawn block**
 
-Change only:
+Replace the complete `spawn` block with:
 
 ```yaml
 spawn:
-  enabled: false
+  enabled: true
+  worlds:
+    - world
+    - world_nether
+    - world_the_end
+  min-spawn-interval-hours: 0.8
+  max-spawn-interval-hours: 1.2
+  min-distance: 800
+  max-distance: 1200
+  max-spawn-attempts: 50
+  max-concurrent-elites: 15
+  spawn-chance: 0.85
+  min-players-online: 1
 ```
 
 Save the file.
 
-- [ ] **Step 2: Reload the disabled profile**
+- [ ] **Step 2: Reload the restored profile**
 
 Run:
 
@@ -212,9 +227,9 @@ Expected:
 Configuration reloaded.
 ```
 
-- [ ] **Step 3: Verify automatic spawning is disabled and report the failure evidence**
+- [ ] **Step 3: Verify the known-good runtime state and report the failure evidence**
 
-Reopen `plugins/NexusMobs/config.yml` and confirm `spawn.enabled: false`. Preserve the relevant console error and Spark readings in the handoff; do not restart Paper or modify other plugins without new approval.
+Reopen `plugins/NexusMobs/config.yml` and confirm the complete original `spawn` block persisted. Run `nexusmobs info` and verify `Active Nexus Mobs: 0 / 15` and `Spawn Interval: 0.8-1.2 hours`. Preserve the relevant console error and Spark readings in the handoff; do not restart Paper or modify other plugins without new approval.
 
 ### Task 5: Record and Publish the Completed State
 

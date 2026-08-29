@@ -60,10 +60,29 @@ The active v1.0.15 resource pack does not contain NexusMobs model assets, and Ne
 - Run `nexusmobs info` and confirm NexusMobs remains version 4.0.0 with a 2.0-3.0 hour spawn interval and a maximum of one active boss.
 - Reopen `plugins/NexusMobs/config.yml` and verify every approved value persisted.
 - Confirm `minecraft:mob_griefing` is still `true`.
-- Run `spark tps` after reload and confirm short-window TPS is healthy.
+- After reload, wait 30 seconds and run `spark tps` twice, 30 seconds apart. Pass if both samples have 5s and 10s TPS >= 19.5 and 10s median tick duration <= 45 ms, with no NexusMobs reload/config errors. If either sample fails, execute rollback.
 - Check the console for NexusMobs configuration or reload errors.
 - Do not force an immediate boss spawn; natural spawning is the acceptance path.
 
 ## Rollback
 
-If the reload causes errors or a measurable performance regression, disable automatic spawning by setting `spawn.enabled: false`, save, and run `nexusmobs reload` again. Preserve the rest of the NexusMobs configuration.
+If the reload or performance gate fails, restore the complete known-good original `spawn` block:
+
+```yaml
+spawn:
+  enabled: true
+  worlds:
+    - world
+    - world_nether
+    - world_the_end
+  min-spawn-interval-hours: 0.8
+  max-spawn-interval-hours: 1.2
+  min-distance: 800
+  max-distance: 1200
+  max-spawn-attempts: 50
+  max-concurrent-elites: 15
+  spawn-chance: 0.85
+  min-players-online: 1
+```
+
+Save the file, run `nexusmobs reload`, and then run `nexusmobs info`. Verify `Active Nexus Mobs: 0 / 15` and `Spawn Interval: 0.8-1.2 hours`. Preserve the failure evidence and do not modify unrelated NexusMobs configuration.
