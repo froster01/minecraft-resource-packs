@@ -1,0 +1,248 @@
+# Configure NexusMobs Automatic Bosses Implementation Plan
+
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+
+**Goal:** Enable conservative automatic NexusMobs boss spawning in the `feraxis` overworld while preserving vanilla mob behavior and healthy TPS.
+
+**Architecture:** Change only the `spawn` section of the live NexusMobs configuration through the authenticated Crafty Controller panel. Reload NexusMobs in place, verify persisted configuration and runtime state, and roll back by disabling automatic spawning if reload or performance checks fail.
+
+**Tech Stack:** Crafty Controller 4.10.8, Paper 26.2, NexusMobs 4.0.0, Spark, Git
+
+---
+
+## File Map
+
+- Live modify: `plugins/NexusMobs/config.yml` — NexusMobs automatic spawn policy.
+- Preserve: `plugins/NexusMobs/bosses.yml` — all 26 boss definitions remain unchanged.
+- Preserve: `server.properties` — resource-pack settings and all server settings remain unchanged.
+- Documentation: `docs/superpowers/specs/2026-08-29-nexusmobs-automatic-bosses-design.md` — approved design and rollback policy.
+
+### Task 1: Verify the Live Baseline
+
+**Files:**
+- Inspect: `plugins/NexusMobs/config.yml`
+
+- [ ] **Step 1: Open the exact live configuration**
+
+Open this authenticated Crafty URL in Chrome:
+
+```text
+https://panel.feraxis.net/panel/edit_file?server_id=0de1de4c-d4aa-45e6-83aa-d71d08c38b05&file=plugins%2FNexusMobs%2Fconfig.yml
+```
+
+Expected: the editor identifies `plugins/NexusMobs/config.yml` and shows a saved file.
+
+- [ ] **Step 2: Confirm the source spawn block has not drifted**
+
+Expected current values:
+
+```yaml
+spawn:
+  enabled: true
+  worlds:
+    - world
+    - world_nether
+    - world_the_end
+  min-spawn-interval-hours: 0.8
+  max-spawn-interval-hours: 1.2
+  min-distance: 800
+  max-distance: 1200
+  max-spawn-attempts: 50
+  max-concurrent-elites: 15
+  spawn-chance: 0.85
+  min-players-online: 1
+```
+
+If any source value differs, stop and compare the drift with the approved design before editing.
+
+- [ ] **Step 3: Capture runtime baseline commands**
+
+Run in the Crafty console:
+
+```text
+nexusmobs info
+gamerule minecraft:mob_griefing
+spark tps
+```
+
+Expected:
+
+```text
+Version: 4.0.0
+Active Nexus Mobs: 0 / 15
+Spawn Interval: 0.8-1.2 hours
+Gamerule mob_griefing is currently set to: true
+```
+
+Record the Spark 5-second and 10-second TPS values for comparison after reload.
+
+### Task 2: Apply the Approved Spawn Profile
+
+**Files:**
+- Modify: `plugins/NexusMobs/config.yml`
+
+- [ ] **Step 1: Replace only the spawn policy values**
+
+The resulting block must be exactly:
+
+```yaml
+spawn:
+  enabled: true
+  worlds:
+    - feraxis
+  min-spawn-interval-hours: 2.0
+  max-spawn-interval-hours: 3.0
+  min-distance: 160
+  max-distance: 320
+  max-spawn-attempts: 20
+  max-concurrent-elites: 1
+  spawn-chance: 1.0
+  min-players-online: 2
+```
+
+Do not alter `resourcepack`, `models`, `elite-mobs`, messages, items, or any other configuration section.
+
+- [ ] **Step 2: Save the file**
+
+Use the Crafty editor Save control.
+
+Expected: the control changes to `Saved`, and the modified timestamp advances.
+
+- [ ] **Step 3: Reopen and verify persistence before reload**
+
+Navigate away, reopen the exact configuration URL, and verify all ten approved spawn values are present.
+
+Expected: one world (`feraxis`), 2.0-3.0 hours, 160-320 blocks, 20 attempts, one concurrent elite, chance 1.0, and two required players.
+
+### Task 3: Reload NexusMobs and Verify Runtime State
+
+**Files:**
+- Verify: `plugins/NexusMobs/config.yml`
+
+- [ ] **Step 1: Reload NexusMobs without restarting Paper**
+
+Run:
+
+```text
+nexusmobs reload
+```
+
+Expected:
+
+```text
+Configuration reloaded.
+```
+
+If the console returns `Error reloading config`, immediately execute Task 4.
+
+- [ ] **Step 2: Verify NexusMobs accepted the profile**
+
+Run:
+
+```text
+nexusmobs info
+```
+
+Expected key lines:
+
+```text
+Version: 4.0.0
+Active Nexus Mobs: 0 / 1
+Configured Types: 26
+Spawn Interval: 2.0-3.0 hours
+```
+
+Do not use `nexusmobs spawn`, `nexusmobs testspawn`, or `nexusmobs weeklyspawn`.
+
+- [ ] **Step 3: Confirm vanilla mob behavior remains enabled**
+
+Run:
+
+```text
+gamerule minecraft:mob_griefing
+```
+
+Expected:
+
+```text
+Gamerule mob_griefing is currently set to: true
+```
+
+- [ ] **Step 4: Check TPS after reload**
+
+Run:
+
+```text
+spark tps
+```
+
+Expected: 5-second and 10-second TPS are near 20.0, and there is no sustained regression from the Task 1 baseline.
+
+- [ ] **Step 5: Inspect fresh console output for NexusMobs errors**
+
+Expected: no YAML parse error, no `Error reloading config`, and no NexusMobs stack trace after the reload timestamp.
+
+### Task 4: Roll Back Only if Verification Fails
+
+**Files:**
+- Modify conditionally: `plugins/NexusMobs/config.yml`
+
+- [ ] **Step 1: Disable automatic spawning while preserving the approved values**
+
+Change only:
+
+```yaml
+spawn:
+  enabled: false
+```
+
+Save the file.
+
+- [ ] **Step 2: Reload the disabled profile**
+
+Run:
+
+```text
+nexusmobs reload
+```
+
+Expected:
+
+```text
+Configuration reloaded.
+```
+
+- [ ] **Step 3: Verify automatic spawning is disabled and report the failure evidence**
+
+Reopen `plugins/NexusMobs/config.yml` and confirm `spawn.enabled: false`. Preserve the relevant console error and Spark readings in the handoff; do not restart Paper or modify other plugins without new approval.
+
+### Task 5: Record and Publish the Completed State
+
+**Files:**
+- Verify: `docs/superpowers/specs/2026-08-29-nexusmobs-automatic-bosses-design.md`
+- Verify: `docs/superpowers/plans/2026-08-29-configure-nexusmobs-automatic-bosses.md`
+
+- [ ] **Step 1: Run repository checks**
+
+Run:
+
+```powershell
+git diff --check
+git status --short
+```
+
+Expected: no whitespace errors and no uncommitted files after committing this plan.
+
+- [ ] **Step 2: Push the documentation commits to main after live verification passes**
+
+Run:
+
+```powershell
+git push origin main
+```
+
+Expected: GitHub `main` advances to the local documentation commit without a force push.
+
+- [ ] **Step 3: Write the shared handoff**
+
+Record the persisted spawn values, reload result, `nexusmobs info`, `mob_griefing`, Spark TPS/MSPT readings, Git commit, pushed branch, and whether rollback was required.
