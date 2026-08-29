@@ -14,8 +14,8 @@ The Bedrock export is not included in this repository.
 
 The current Guns-free server resource pack is:
 
-`https://github.com/froster01/minecraft-resource-packs/releases/download/v1.0.10/server-resource-pack-backpackplus-v1.0.14.zip`
+`https://github.com/froster01/minecraft-resource-packs/releases/download/v1.0.10/server-resource-pack-backpackplus-v1.0.15.zip`
 
-SHA-1: `794a308a8f7ef97ffc04d36a639850ca5128b6d1`
+SHA-1: `ba6bd109d0704055930d8ebaa51ece3adc8c2c81`
 
-Version `v1.0.14` retains Backpacks, Vanilla+, Tool Trims, InvMinecarts, and the other server assets while removing the unused Guns weapons, ammunition, explosives, C4/defusal, models, textures, fonts, and sounds.
+Version `v1.0.15` retains Backpacks, Vanilla+, Tool Trims, InvMinecarts, and the other server assets while removing the unused Guns weapons, ammunition, explosives, C4/defusal, models, textures, fonts, and sounds.
