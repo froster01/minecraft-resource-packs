@@ -4,7 +4,7 @@
 
 Enable automatic random NexusMobs bosses on Hanz Minecraft without introducing a meaningful TPS burden or changing the server's existing vanilla mob behavior.
 
-## Current State
+## Pre-deployment Baseline
 
 - The server runs Paper 26.2 with NexusMobs 4.0.0.
 - NexusMobs is enabled and exposes 26 boss types, but no bosses are active.
@@ -58,6 +58,18 @@ The active v1.0.15 resource pack does not contain NexusMobs model assets, and Ne
 - Independent reviewer tick durations (min/median/95th percentile/max):
   - 10-second: `21.1/26.0/34.4/227.0 ms`.
   - 1-minute: `21.1/25.7/35.5/353.7 ms`.
+
+## Completion Record — 2026-08-30 MYT
+
+- The persisted profile is enabled for `feraxis` only, with a 2.0-3.0 hour interval, 160-320 block distance, 20 spawn attempts, one maximum concurrent elite, spawn chance 1.0, and a minimum of two players online.
+- `nexusmobs reload` succeeded at `2026-08-30 01:11:09 MYT`, and the next random spawn was scheduled in 2.78 hours.
+- `nexusmobs info` reported NexusMobs v4.0.0, 0/1 active bosses, 26 configured types, and a 2.0-3.0 hour interval.
+- `minecraft:mob_griefing` remained `true`.
+- Post-reload sample 1: 5-second TPS `19.79`, 10-second TPS `19.89`, and 10-second median tick duration `23.7 ms`.
+- Post-reload sample 2: 5-second TPS `20.0`, 10-second TPS `20.0`, and 10-second median tick duration `23.3 ms`.
+- No fresh NexusMobs configuration or reload errors appeared after reload.
+- Rollback was not required. No manual boss spawn was issued, and Paper was not restarted.
+- The first natural boss spawn remains a monitoring item.
 
 ## Deployment
 
