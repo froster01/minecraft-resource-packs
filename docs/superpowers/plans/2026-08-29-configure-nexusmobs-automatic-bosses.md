@@ -231,6 +231,12 @@ Configuration reloaded.
 
 Reopen `plugins/NexusMobs/config.yml` and confirm the complete original `spawn` block persisted. Run `nexusmobs info` and verify `Active Nexus Mobs: 0 / 15` and `Spawn Interval: 0.8-1.2 hours`. Preserve the relevant console error and Spark readings in the handoff; do not restart Paper or modify other plugins without new approval.
 
+- [ ] **Step 4: Verify rollback performance recovery**
+
+After confirming the restored runtime state, wait 30 seconds and run `spark tps` twice, 30 seconds apart. Recovery passes only if both samples have 5s and 10s TPS >= 19.5 and 10s median tick duration <= 45 ms, with no fresh NexusMobs errors after the rollback reload.
+
+If either sample fails or a fresh NexusMobs error appears, stop and request explicit user approval before restarting Paper or making unrelated server changes.
+
 ### Task 5: Record and Publish the Completed State
 
 **Files:**

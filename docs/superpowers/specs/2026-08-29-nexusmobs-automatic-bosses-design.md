@@ -48,12 +48,23 @@ All unrelated NexusMobs settings and boss definitions remain unchanged.
 
 The active v1.0.15 resource pack does not contain NexusMobs model assets, and NexusMobs' own resource-pack URL and hash are empty. Boss logic can operate, but bosses will use their vanilla base-entity appearance instead of the plugin's custom 3D models. Adding custom visuals is a separate task that requires an author-provided NexusMobs resource pack and a new merged server-pack release.
 
+## Recorded Baseline
+
+- Primary worker TPS: 5-second `20.0`; 10-second `20.0`.
+- Primary worker tick durations (min/median/95th percentile/max):
+  - 10-second: `23.4/28.8/41.3/277.1 ms`.
+  - 1-minute: `22.5/27.9/37.6/328.6 ms`.
+- Independent reviewer TPS: 5-second `20.0`; 10-second `20.0`.
+- Independent reviewer tick durations (min/median/95th percentile/max):
+  - 10-second: `21.1/26.0/34.4/227.0 ms`.
+  - 1-minute: `21.1/25.7/35.5/353.7 ms`.
+
 ## Deployment
 
 1. Reopen the live NexusMobs configuration and confirm the source values still match the inspected state.
 2. Change only the approved spawn keys.
 3. Save the file and run `nexusmobs reload` from the Crafty console.
-4. Do not restart the server unless the plugin rejects the reload.
+4. Paper is never restarted automatically. If the initial reload or rollback fails, stop and request explicit user approval before restarting Paper or making unrelated server changes.
 
 ## Verification
 
@@ -85,4 +96,8 @@ spawn:
   min-players-online: 1
 ```
 
-Save the file, run `nexusmobs reload`, and then run `nexusmobs info`. Verify `Active Nexus Mobs: 0 / 15` and `Spawn Interval: 0.8-1.2 hours`. Preserve the failure evidence and do not modify unrelated NexusMobs configuration.
+Save the file, run `nexusmobs reload`, and then run `nexusmobs info`. Verify `Active Nexus Mobs: 0 / 15` and `Spawn Interval: 0.8-1.2 hours`.
+
+After confirming the restored runtime state, wait 30 seconds and run `spark tps` twice, 30 seconds apart. Recovery passes only if both samples have 5s and 10s TPS >= 19.5 and 10s median tick duration <= 45 ms, with no fresh NexusMobs errors after the rollback reload.
+
+If either sample fails or a fresh NexusMobs error appears, stop and request explicit user approval before restarting Paper or making unrelated server changes. Preserve the failure evidence and do not modify unrelated NexusMobs configuration.
